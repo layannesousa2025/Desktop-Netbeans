@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="btAbastecerCarro" max="32767" attributes="0"/>
+                          <Component id="btLigarCarro" max="32767" attributes="0"/>
+                          <Component id="btAumentarVelocidade" max="32767" attributes="0"/>
+                          <Component id="btReduzirVelocidade" min="-2" pref="127" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="desligar" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="reduzir" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                  <Component id="aumentar" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                  <Component id="ligar" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                  <Component id="abastecer" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" pref="293" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Component id="btDesligarCarro" min="-2" pref="127" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="396" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
+                              <Component id="btAbastecerCarro" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                              <Component id="abastecer" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="ligar" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btLigarCarro" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btAumentarVelocidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="aumentar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btReduzirVelocidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="reduzir" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btDesligarCarro" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="desligar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="213" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="307" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btAbastecerCarro">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="abastecerCarro"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btAbastecerCarroMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btLigarCarro">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ligarCarro"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btLigarCarroMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btAumentarVelocidade">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="aumentarVelocidade"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btAumentarVelocidadeMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btReduzirVelocidade">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="reduzirVelocidade"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btReduzirVelocidadeMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btDesligarCarro">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="desligarCarro"/>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btDesligarCarroMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="abastecer">
+    </Component>
+    <Component class="javax.swing.JTextField" name="aumentar">
+    </Component>
+    <Component class="javax.swing.JTextField" name="reduzir">
+    </Component>
+    <Component class="javax.swing.JTextField" name="desligar">
+    </Component>
+    <Component class="javax.swing.JTextField" name="ligar">
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="resultado">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
