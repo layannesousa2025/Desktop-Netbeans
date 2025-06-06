@@ -4,17 +4,30 @@
  */
 package sistemavenda;
 
+import java.beans.PropertyVetoException;
+import java.lang.System.Logger;
+import java.lang.System.Logger.Level;
+import java.text.DecimalFormat;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author Layanne55896236
  */
 public class Vendas extends javax.swing.JInternalFrame {
-         int acomulador =0;
+         double acumulador =0;
     /**
      * Creates new form Vendas
      */
     public Vendas() {
         initComponents();
+         
+             try {
+                 setMaximum(true);
+             } catch (PropertyVetoException ex) {
+                 java.util.logging.Logger.getLogger(Vendas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+             }
+   
     }
     
    
@@ -142,6 +155,27 @@ public class Vendas extends javax.swing.JInternalFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btImprimirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btImprimirMouseClicked
+        
+         double quant = Double.parseDouble(quantidade.getText());
+         double prec = Double.parseDouble(preco.getText());
+         DecimalFormat formatarCasasDecimais = new DecimalFormat("###,##0.00");
+         double valorproduto = quant*prec;
+        acumulador = acumulador+valorproduto;
+         
+         
+          DefaultTableModel vendas =(DefaultTableModel) tabela.getModel();
+          Object[]dados={ produto.getText(),quantidade.getText(),"R$"+preco.getText(),"R$"+formatarCasasDecimais.format(valorproduto) };
+          vendas.addRow(dados);
+          
+           resultado.setText("valor Total R$: "+formatarCasasDecimais.format(acumulador));
+          
+          
+          produto.setText(null);
+          quantidade.setText(null);
+          preco.setText(null);
+          
+          
+         
          
     }//GEN-LAST:event_btImprimirMouseClicked
 

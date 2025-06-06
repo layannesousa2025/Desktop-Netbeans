@@ -15,6 +15,7 @@ public class Sistema extends javax.swing.JFrame {
      */
     public Sistema() {
         initComponents();
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -30,6 +31,7 @@ public class Sistema extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         pProdrutos = new javax.swing.JMenuItem();
+        formulario = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -54,6 +56,14 @@ public class Sistema extends javax.swing.JFrame {
             }
         });
         jMenu1.add(pProdrutos);
+
+        formulario.setText("formulario");
+        formulario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                formularioActionPerformed(evt);
+            }
+        });
+        jMenu1.add(formulario);
 
         jMenuBar1.add(jMenu1);
 
@@ -81,6 +91,12 @@ public class Sistema extends javax.swing.JFrame {
           painel.add(vd);
           vd.setVisible(true);
     }//GEN-LAST:event_pProdrutosActionPerformed
+
+    private void formularioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_formularioActionPerformed
+         Formulario fm = new Formulario();
+          painel.add(fm);
+          fm.setVisible(true);
+    }//GEN-LAST:event_formularioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,6 +134,7 @@ public class Sistema extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem formulario;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
